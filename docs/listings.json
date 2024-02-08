@@ -3,7 +3,9 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
-      "/posts/welcome/index.html"
+      "/posts/gev_copula_ar1/index.html",
+      "/posts/welcome/index.html",
+      "/posts/forest-plot-table/index.html"
     ]
   }
 ]

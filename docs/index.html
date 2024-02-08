@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>exeterworkshop</title>
+<title>Binni’s Webpage!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -139,7 +139,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">exeterworkshop</span>
+    <span class="navbar-title">Binni’s Webpage!</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -170,28 +170,12 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">exeterworkshop</h1>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(2)</span></div><div class="category" data-category="analysis">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bayesian">bayesian <span class="quarto-category-count">(1)</span></div><div class="category" data-category="code">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="copulas">copulas <span class="quarto-category-count">(1)</span></div><div class="category" data-category="english">english <span class="quarto-category-count">(2)</span></div><div class="category" data-category="news">news <span class="quarto-category-count">(2)</span></div><div class="category" data-category="phd">phd <span class="quarto-category-count">(1)</span></div><div class="category" data-category="plots">plots <span class="quarto-category-count">(1)</span></div><div class="category" data-category="spatial statistics">spatial statistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="stan">stan <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tutorial">tutorial <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -202,10 +186,30 @@ window.Quarto = {
 
 
 
-
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-title" data-direction="asc">
+          Title
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
+     </select>
+  </div>
+</div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1707390360618" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
+<div class="quarto-post image-right" data-index="0" data-categories="news,code,analysis" data-listing-date-sort="1707350400000" data-listing-file-modified-sort="1707391789965" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <div class="thumbnail">
 <p><a href="./posts/post-with-code/index.html" class="no-external"></a></p><a href="./posts/post-with-code/index.html" class="no-external">
 <p><img src="./posts/post-with-code/image.jpg" class="thumbnail-image"></p>
@@ -239,12 +243,63 @@ analysis
 Feb 8, 2024
 </div>
 <div class="listing-author">
-Harlow Malloc
+Brynjólfur Gauti Guðrúnar Jónsson
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="news" data-listing-date-sort="1707091200000" data-listing-file-modified-sort="1707390360617" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="quarto-post image-right" data-index="1" data-categories="english,R,phd,stan,bayesian,spatial statistics,copulas" data-listing-date-sort="1707177600000" data-listing-file-modified-sort="1707391686682" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="18" data-listing-word-count-sort="3567">
+<div class="thumbnail">
+<p><a href="./posts/gev_copula_ar1/index.html" class="no-external"></a></p><a href="./posts/gev_copula_ar1/index.html" class="no-external">
+<p><img src="https://raw.githubusercontent.com/bgautijonsson/stan_experiments/master/Results/Figures/elppd.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/gev_copula_ar1/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/gev_copula_ar1/index.html" class="no-external">Applying a Gaussian AR(1) Copula to Generalized Extreme Value Margins</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/gev_copula_ar1/index.html" class="no-external">A simulation study of the differences between AR(1) copula and i.i.d copula</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('english'); return false;">
+english
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('phd'); return false;">
+phd
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('stan'); return false;">
+stan
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('bayesian'); return false;">
+bayesian
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('spatial statistics'); return false;">
+spatial statistics
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('copulas'); return false;">
+copulas
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/gev_copula_ar1/index.html" class="no-external">Another step in my PhD studies is to apply multivariate copulas to data with Generalized Extreme Value marginal distributions. This is important to enable us to model dependence on the data level, as opposed to the latent <em>(parameter)</em> level. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/gev_copula_ar1/index.html" class="no-external">
+<div class="listing-date">
+Feb 6, 2024
+</div>
+<div class="listing-author">
+Brynjólfur Gauti Guðrúnar Jónsson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="news" data-listing-date-sort="1707091200000" data-listing-file-modified-sort="1707391797106" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
 <div class="thumbnail">
 <p><a href="./posts/welcome/index.html" class="no-external"></a></p><a href="./posts/welcome/index.html" class="no-external">
 <p class="card-img-top"><img src="posts/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
@@ -272,7 +327,49 @@ news
 Feb 5, 2024
 </div>
 <div class="listing-author">
-Tristan O’Malley
+Brynjólfur Gauti Guðrúnar Jónsson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="english,R,plots,tutorial" data-listing-date-sort="1656370800000" data-listing-file-modified-sort="1707391774707" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="897">
+<div class="thumbnail">
+<p><a href="./posts/forest-plot-table/index.html" class="no-external"></a></p><a href="./posts/forest-plot-table/index.html" class="no-external">
+<p><img src="./posts/forest-plot-table/featured.png" class="thumbnail-image"></p>
+</a><p><a href="./posts/forest-plot-table/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/forest-plot-table/index.html" class="no-external">Forest Plots with Built-In Tables</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/forest-plot-table/index.html" class="no-external">Creating forest plots with coefficient tables in ggplot2 with cowplot</a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('english'); return false;">
+english
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
+R
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('plots'); return false;">
+plots
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tutorial'); return false;">
+tutorial
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/forest-plot-table/index.html" class="no-external">I’ve seen this kind of figure poking around, but I didn’t really think about them until the other day I was asked about how to make one in R. Here I will walk through making one of these plots using the <code>ggplot2</code> and <code>cowplot</code> packages. </a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/forest-plot-table/index.html" class="no-external">
+<div class="listing-date">
+Jun 28, 2022
+</div>
+<div class="listing-author">
+Brynjólfur Gauti Guðrúnar Jónsson
 </div>
 </a>
 </div>

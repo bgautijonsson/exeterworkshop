@@ -1,8 +1,9 @@
 ---
 title: "About"
-image: profile.jpg
+image: images/binni_graphic_smaller.png
 about:
-  template: jolla
+  id: aboutme
+  template: trestles
   links:
     - icon: twitter
       text: Twitter
@@ -15,4 +16,21 @@ about:
       href: https://github.com
 ---
 
-About this blog
+*This text comes before the aboutme*
+
+:::{#aboutme}
+
+I'm a PhD student at the University of Iceland. I'm currently in Exeter doing a workshop and working on this exact webpage.
+
+## Education
+
+**University of Iceland** | Reykjavík, Iceland
+
+Msc in Statistics | September 2018 - September 2020
+
+**University of Iceland** Reykjavík, Iceland
+
+
+:::
+
+*This text comes after the aboutme*
